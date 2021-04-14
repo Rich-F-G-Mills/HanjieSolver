@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Read Me.md" />
+    <None Include="README.md" />
   </ItemGroup>
 
   <ItemGroup>

@@ -24,6 +24,7 @@
     <Content Include="PUZZLES\32935.txt" />
     <Content Include="PUZZLES\4438.TXT" />
     <Content Include="PUZZLES\FIERCE.txt" />
+    <Content Include="SMT Sample.txt" />
   </ItemGroup>
 
   <ItemGroup>

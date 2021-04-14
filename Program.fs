@@ -39,9 +39,9 @@ let main argv =
 
                     process_file mode new_clues _lines                        
 
-        //File.ReadAllLines @"PUZZLES\32131.TXT"
-        File.ReadAllLines @"..\..\..\PUZZLES\FIERCE.TXT"
-        //File.ReadAllLines @"PUZZLES\19043.TXT"
+        File.ReadAllLines @"..\..\..\PUZZLES\32131.TXT"
+        //File.ReadAllLines @"..\..\..\PUZZLES\FIERCE.TXT"
+        //File.ReadAllLines @"..\..\..\PUZZLES\19043.TXT"
         |> Seq.filter (fun x -> not(x.StartsWith("#")))
         |> Seq.toList
         |> process_file None ([||], [||])
@@ -164,7 +164,7 @@ let main argv =
     grid_vars
     |> Array2D.iteri grid_assert
 
-    //File.WriteAllText("SMT.TXT", solver.ToString())
+    File.WriteAllText("SMT.TXT", solver.ToString())
 
     Console.WriteLine("Checking satisfiability...\n")
 

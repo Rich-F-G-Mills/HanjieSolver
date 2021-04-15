@@ -15,10 +15,11 @@ By creating boolean variables representing the following aspects of a puzzle:
  - Whether the cell at (i,j) is filled in (or not)
  - Whether the kth clue for the ith row starts in a particular column.
  - Whether the kth clue for the jth column starts in a particular row.
+ - Which clue start positions are feasible depending on what prior clue has been selected.
 
 With the above approach, it is possible to generate a series of logical propositions that, when solved, uniquely specifies the solution.
 
-This project is implemented in F# and leverages the Z3 library which offers SMT solving functionality.
+This project is implemented in F# and leverages the [Z3 library](https://github.com/Z3Prover/z3/wiki) which offers SMT solving functionality.
 
 The program only requires that puzzles are entered in a particlar format. For example, the puzzle located [here](https://www.nonograms.org/nonograms/i/32131) would be encoded as:
 
@@ -64,4 +65,4 @@ The resulting console output is shown below.
               ████        ████
                 ██    ████████
 ```
- Overall, this was an interesting application of the Z3 engine in order to solve such puzzles.
+ **In conclusion...** This project showed one of the many uses of the Z3 SMT engine and how it can be applied to seemingly unrelated problems.

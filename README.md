@@ -23,14 +23,14 @@ This project is implemented in F# and leverages the [Z3 library](https://github.
 
 The program only requires that puzzles are entered in a particlar format. For example, the puzzle located [here](https://www.nonograms.org/nonograms/i/32131) would be encoded as:
 
-> **ROW**
-> 1,4
-> 2,3,3
-> ...
-> 1,4
-> **COL**
-> 7 6,5
-> ...
+> **ROW**  
+> 1,4  
+> 2,3,3  
+> ...  
+> 1,4  
+> **COL**  
+> 7 6,5  
+> ...  
 > 1,1,4
 
 (The complete file can be found [here](https://github.com/DaMillch/HanjieSolver/blob/master/PUZZLES/32131.txt))
